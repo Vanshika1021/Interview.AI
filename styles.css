@@ -394,6 +394,8 @@ footer p {
   transform: scale(0.98);
 }
 /* General Reset */
+
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -484,4 +486,101 @@ h1 {
 
 .category:active h2 {
   color: #ffdd57; /* Keep the yellow color for title when clicked */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #4b79a1, #283e51);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.category-container, .difficulty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.category, .difficulty {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.category h2, .difficulty h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.category p, .difficulty p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.category button, .difficulty button {
+  background-color: #4b79a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.category button:hover, .difficulty button:hover {
+  background-color: #283e51;
+  transform: scale(1.05);
+}
+
+.category:hover, .difficulty:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.difficulty-container {
+  padding-top: 40px;
+}
+
+#easy:hover {
+  background-color: #e6f4f1;
+}
+
+#intermediate:hover {
+  background-color: #e8f7e6;
+}
+
+#hard:hover {
+  background-color: #f7e6e6;
 }
